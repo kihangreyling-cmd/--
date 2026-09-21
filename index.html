@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kihan Greyling VR</title>
+<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script> 
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+</head>
+<!-- This is the main body of the website- ALL your content goes AFTER the <body> tag and before the </body> tag -->
+<body>
+<!--environment-->
+<a-scene>
+    <a-assets>
+        <img id="art1" src="images/basil.jpg" preload="auto">
+    
+       </a-assets>
+           
+    <a-entity environment="preset:starry;dressingAmount:10;skyColor:#420273;"></a-entity>
+    <!--Museum start-->
+    <!-- Museum floor starts here -->
+    <a-cylinder id="floor" position="0 0 0" radius="7.5" color="white" height="0.1"></a-cylinder>
+    <a-box id="box1" position="0 1.473 4.907" rotation="0 0 0" scale="10 3 0.2" color="#B29E67"></a-box>
+    <a-box id="box2" position="0 1.473 -4.907" rotation="0 0 0" scale="10 3 0.2" color="#B29E67"></a-box>
+    <a-box id="box3" position="5.049 1.454 -0.008" rotation="0 -90 0" scale="10 3 0.2" color="#B29E67"></a-box>
+    <a-box id="box4" position="-5.049 1.454 -0.008" rotation="0 -90 0" scale="10 3 0.2" color="#B29E67"></a-box>
+    <a-cylinder id="triangle_front" segments-radial="3" position="0 3.874 4.907" rotation="-90 0 0" scale="5.774 0.2 1.8" color="#B29E67"></a-cylinder>
+    <a-cylinder id="triangle_back" segments-radial="3" position="0 3.874 -4.907 " rotation="-90 0 0" scale="5.774 0.2 1.8" color="#B29E67"></a-cylinder>
+    <a-box id="roof_right" position="2.580 4.328 0" rotation="28.433 90 0" scale="10.931 0.20 6.110" color="#6C4A03"></a-box>
+    <a-box id="roof_left" position="-2.599 4.321 -0.017" rotation="28.433 -90 0" scale="10.931 0.20 6.130" color="#6C4A03"></a-box>
+    <a-box id="south_tower" position="70 1.473 4.907" rotation="0 0 0" scale="10 200 10" color="#6A6A6A"></a-box>
+    <a-box id="north_tower" position="58 1.473 16" rotation="0 0 0" scale="10 200 10" color="#6A6A6A"></a-box>
+    <a-box id="main_box" position="-32 1.473 -25" rotation="0 0 0" scale="25 20 20" color="#B29E67"></a-box>
+    <a-box id="roof" position="-32 12 -25" rotation="0 0 0" scale="29 2 24" color="#B29E67"></a-box>
+    <a-box id="pillar_1" position="-19.4 1.473 -14.8" rotation="0 0 0" scale="2 20 2" color="#B29E67"></a-box>
+    <a-box id="pillar_2" position="-19.4 1.473 -35" rotation="0 0 0" scale="2 20 2" color="#B29E67"></a-box>
+    <a-box id="main_box" position="-32 1.473 -25" rotation="0 0 0" scale="25 20 20" color="#B29E67"></a-box>
+    <a-box id="skyscraper_bottom" position="50 1.473 -50" rotation="0 0 0" scale="15 25 15" color="#976F00"></a-box>
+    <a-box id="skyscraper_bottom" position="50 25 -50" rotation="0 0 0" scale="13 50 13" color="#976F00"></a-box>
+    
+    <!-- ART -->
+    <a-plane id="art1" src="#art1" scale="2 2 0.05" rotation="0 0 0" position="-0.162 1.934 -4.792"></a-plane>
+</a-scene>
+
+
+
+
+
+
+
+</body>
+</html>
